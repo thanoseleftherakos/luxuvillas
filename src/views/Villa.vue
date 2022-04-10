@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="villa__content__main">
-              <div v-html="villa.content.rendered"></div>
+              <div v-html="villa.acf.hidden_site_description"></div>
               <div class="villa__tabs">
                 <nav class="villa__tabs__nav">
                   <ul>
@@ -70,11 +70,10 @@
         <!-- <div class="container-fluid">
           <div class="row">
             <div class="acf-map" style="margin-bottom: 60px;">
-              <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+              <div class="marker" :data-lat="villa.acf.map.lat" :data-lng="villa.acf.map.lng"></div>
             </div>
           </div>
         </div> -->
-
       </div>
 
       <footer class="entry-footer">
