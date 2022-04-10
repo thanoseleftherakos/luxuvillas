@@ -26,6 +26,4 @@ app.get("/", function (req, res) {
   res.render(path.join(__dirname + "/index.html"));
 });
 
-app.listen(3000, function () {
-  console.log("Express serving on 3000!");
-});
+app.listen(3000);
